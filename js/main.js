@@ -1,10 +1,12 @@
 'use strict';
 
-function ten(){
+function ten(str){
     for (let i = 0; i<10; i++){
-        console.log(i, 'patata');
+        console.log(i, str);
     }
 
 }
 
-ten();
+ten('patata');
+ten('aguacate');
+ten('pizza');
