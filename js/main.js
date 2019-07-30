@@ -1,14 +1,45 @@
 'use strict';
 
-function writeThis(str, maxNumber){
-    for (let i = 0; i < maxNumber ; i++){
+function writeThis(paco){
+    for (let i = 0; i < paco.total ; i++){
+        console.log(i, paco.text);
+    }
+}
+function writeMyArray(array){
+    for (let item of array){
+        writeThis(item);
+    }
+}
+
+function writeThis2(str, max){
+    for (let i = 0; i < max ; i++){
         console.log(i, str);
     }
 }
-function getRandomNumber(max) {
-    return Math.ceil(Math.random() * max);
-  }
+function writeMyArray2(array){
+    for (let item of array){
+        writeThis2(item.text, item.total);
+    }
+}
 
-writeThis('patata', getRandomNumber(10));
-writeThis('aguacate', getRandomNumber(10));
-writeThis('pizza', getRandomNumber(10));
+const myWordList =  [
+    {
+      text: 'Pencil',
+      total: 6
+    },
+    {
+      text: 'Thermo',
+      total: 2
+    },
+    {
+      text: 'TV',
+      total: 8
+    },
+    {
+      text: 'Phone',
+      total: 4
+    }
+  ];
+
+  writeMyArray(myWordList);
+  writeMyArray2(myWordList);
