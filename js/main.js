@@ -16,11 +16,10 @@ function writeThisOb(paco){
     }
 }
 
-writeThisOb({text:'Patata', max:10});
-
 const obj = {
     text: 'Aguacate',
     max: 10
 }
 
 writeThisOb(obj);
+writeThisOb({text:'Patata', max:10});
